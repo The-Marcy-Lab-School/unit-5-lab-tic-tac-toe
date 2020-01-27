@@ -29,69 +29,9 @@ h2 {
   background-color: #848484;
   border: 1px solid black;
   text-align: center;
-}
-
-#0 {
-  background-color: #848484;
-  border: 1px solid black;
-  text-align: center;
-  grid-area: topleft;
-}
-
-#1 {
-  background-color: #848484;
-  border: 1px solid black;
-  text-align: center;
-  grid-area: topmid;
-}
-
-#2 {
-  background-color: #848484;
-  border: 1px solid black;
-  text-align: center;
-  grid-area: topright;
-}
-
-#3 {
-  background-color: #848484;
-  border: 1px solid black;
-  text-align: center;
-  grid-area: middleleft;
-}
-
-#4 {
-  background-color: #848484;
-  border: 1px solid black;
-  text-align: center;
-  grid-area: middlemid;
-}
-
-#5 {
-  background-color: #848484;
-  border: 1px solid black;
-  text-align: center;
-  grid-area: middleright;
-}
-
-#6 {
-  background-color: #848484;
-  border: 1px solid black;
-  text-align: center;
-  grid-area: bottomleft;
-}
-
-#7 {
-  background-color: #848484;
-  border: 1px solid black;
-  text-align: center;
-  grid-area: bottommid;
-}
-
-#8 {
-  background-color: #848484;
-  border: 1px solid black;
-  text-align: center;
-  grid-area: bottomright;
+  padding-top: 20px;
+  color: white;
+  font-size: 100px;
 }
 
 #restart {
@@ -99,8 +39,9 @@ h2 {
   margin-bottom: 20px;
   height: 40px;
   width: 100px;
+  font-size: 20px;
 }
 
 #message {
-  font-size: 40px;
+  font-size: 70px;
 }
