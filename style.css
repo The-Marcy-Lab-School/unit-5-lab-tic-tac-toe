@@ -1,0 +1,13 @@
+#board {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.square {
+  flex: 1 0 calc(33% - 20px);
+  margin: 5px;
+  height: 80px;
+  background-color: pink;
+}
+
