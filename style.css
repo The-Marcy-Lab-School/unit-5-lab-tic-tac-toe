@@ -1,0 +1,106 @@
+body {
+  background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/02/Download-High-Quality-Wood-Background-Wallpaper-for-Your-Desktop.jpg');
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.board {
+  margin-left: 430px;
+  display: grid;
+  height: 500px;
+  width: 500px;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-areas:
+  'topleft topmid topright'
+  'middleleft middlemid middleright'
+  'bottomleft bottommid bottomright'
+}
+
+.space {
+  background-color: #848484;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#0 {
+  background-color: #848484;
+  border: 1px solid black;
+  text-align: center;
+  grid-area: topleft;
+}
+
+#1 {
+  background-color: #848484;
+  border: 1px solid black;
+  text-align: center;
+  grid-area: topmid;
+}
+
+#2 {
+  background-color: #848484;
+  border: 1px solid black;
+  text-align: center;
+  grid-area: topright;
+}
+
+#3 {
+  background-color: #848484;
+  border: 1px solid black;
+  text-align: center;
+  grid-area: middleleft;
+}
+
+#4 {
+  background-color: #848484;
+  border: 1px solid black;
+  text-align: center;
+  grid-area: middlemid;
+}
+
+#5 {
+  background-color: #848484;
+  border: 1px solid black;
+  text-align: center;
+  grid-area: middleright;
+}
+
+#6 {
+  background-color: #848484;
+  border: 1px solid black;
+  text-align: center;
+  grid-area: bottomleft;
+}
+
+#7 {
+  background-color: #848484;
+  border: 1px solid black;
+  text-align: center;
+  grid-area: bottommid;
+}
+
+#8 {
+  background-color: #848484;
+  border: 1px solid black;
+  text-align: center;
+  grid-area: bottomright;
+}
+
+#restart {
+  margin-left: 610px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 100px;
+}
+
+#message {
+  font-size: 40px;
+}
