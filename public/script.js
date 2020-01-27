@@ -13,9 +13,12 @@ function handleClick(e){
   const cell = e.target;
   cell.innerText = playerTurn ? playerTwo : playerOne;
   swapTurn();
-  checkForWinner();
-  declareWinner();
-  console.log(cell);
+  if(movesMade >= 4 && movesMade !== 9){
+    cellClick();
+    declareWinner();
+    checkForWinner();
+  }
+  movesMade += 1
 }
 
 const board = ['', '', '', '', '', '', '', '', ''];
@@ -33,61 +36,24 @@ const winningConditions = [
 
 
 let winner = document.querySelector('.winner');
-
-function checkForWinner(){
-  let cell = document.querySelectorAll('.cell');
-  let cellClick = cell.forEach((cell,id)=>{
-    return board.splice(id,1,cell.innerText);
+let cellClick = () => {cell.forEach((cell,id)=>{
+  return board.splice(id,1,cell.innerText);
   });
-  console.log(board);
+}
+function checkForWinner(){
+  winner.innerText = ` Winner: ${board[declareWinner()[0]]} wins`;
 }
   
 function declareWinner(){
-  let results = winningConditions.find(function(combo){
+  return winningConditions.find(function(combo){
     if (board[combo[0]] !== "" && board[combo[1]] !== "" && board[combo[2]] !== "" && board[combo[0]] === board[combo[1]] && board[combo[1]] === board[combo[2]]){
-      return true
+      return board[combo[0]];
     } else{
       return false
     }
   });
-  return results;
 }  
-
-
-function makeWinner(){
-  let results = winningConditions.find(function(combo){
-    // if(movesMade >= 4 && movesMade !== 9) {
-    if(board[combo[0]] !== '' && board[combo[0]] === board[combo[1]] && board[combo[0]] === board[combo[2]]){
-      winner.innerText = winner.innerText === playerTurn ? playerOne : playerTwo; 
-    }
-    if(board[combo[3]] !== '' && board[combo[3]] === board[combo[4]] && board[combo[3]] === board[combo[5]]){
-      winner.innerText = winner.innerText === playerTurn ? playerOne : playerTwo; 
-    }
-    if(board[combo[6]] !== '' && board[combo[6]] === board[combo[7]] && board[combo[6]] === board[combo[8]]){
-      winner.innerText = winner.innerText === playerTurn ? playerOne : playerTwo; 
-    }
-    if(board[combo[0]] !== '' && board[combo[0]] === board[combo[4]] && board[combo[0]] === board[combo[8]]){
-      winner.innerText = winner.innerText === playerTurn ? playerOne : playerTwo; 
-    }
-    if(board[combo[2]] !== '' && board[combo[2]] === board[combo[4]] && board[combo[2]] === board[combo[6]]){
-      winner.innerText = winner.innerText === playerTurn ? playerOne : playerTwo; 
-    }
-    if(board[combo[0]] !== '' && board[combo[0]] === board[combo[3]] && board[combo[0]] === board[combo[6]]){
-      winner.innerText = winner.innerText === playerTurn ? playerOne : playerTwo; 
-    }
-    if(board[combo[1]] !== '' && board[combo[4]] === board[combo[1]] && board[combo[7]] === board[combo[7]]){
-      winner.innerText = winner.innerText === playerTurn ? playerOne : playerTwo; 
-    }
-    if(board[combo[2]] !== '' && board[combo[2]] === board[combo[5]] && board[combo[2]] === board[combo[8]]){
-      winner.innerText = winner.innerText === playerTurn ? playerOne : playerTwo; 
-    }
-  // }
-  });
-    return results;
-}
 
 function swapTurn(){
   playerTurn = !playerTurn;
 }
-
-let restart = document.querySelector('.restart');
