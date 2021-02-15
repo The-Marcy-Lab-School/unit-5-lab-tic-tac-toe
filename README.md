@@ -5,7 +5,6 @@ For this cumulative lab, you will simply build a Tic-Tac-Toe game.
 
 **Here are your requirements:**
 
-0. Create a new repository on Github. 
 1. Your Tic-Tac-Toe game should be designed as a two-player game. In other words, you are not responsible for creating a CPU or an AI to play against user. Your game should simply alternate between 'X's and 'O's upon clicks, allowing two players to sit next to each other and play on one computer.
 2. Your game should clearly identify a winner or indicate when a "draw" has occurred.
 3. Your game should have the ability to "restart" without refreshing the page by clearing the board.
