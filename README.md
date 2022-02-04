@@ -19,8 +19,7 @@ Your submission will be scored against the following criteria:
   * Is your game board visually appealing?
   * Does your game respond predictably to user input?
 3. **Code Quality:**
-  * Is your game logic encapsulated into classes?
-  * Are your UI methods encapsulated as well?
+  * Is your game logic abstracted into functions or encapsulated into classes?
   
 
 ## Brownie Points 🧁
