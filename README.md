@@ -1,7 +1,7 @@
 # Lab: Tic-Tac-Toe
 
 ## Directions
-For this cumulative lab, you will simply build a Tic-Tac-Toe game.
+For this cumulative lab, you will simply build a Tic-Tac-Toe game using React components and Vite. To get started, make your own repo using `npm create vite` and when you are done, submit the link to your repo. 
 
 **Here are your requirements:**
 
@@ -24,7 +24,8 @@ Your submission will be scored against the following criteria:
   * You must not put all your logic into a single file
   * Think about what components you need
   * What data do you need to store as state?
-  * Does the form need controlled inputs or not? 
+  * Does the form need controlled inputs or not?
+  * How can you automatically generate the 9 board spaces? 
   
 
 ## Brownie Points 🧁
