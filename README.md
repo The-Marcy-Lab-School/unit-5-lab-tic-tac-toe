@@ -37,6 +37,6 @@ Once you have satisfied the requirements above, consider implementing the follow
 
 ## Need Help?
 
-Check out the [React.Dev tutorial](https://react.dev/learn/tutorial-tic-tac-toe)https://react.dev/learn/tutorial-tic-tac-toe
+Check out the [React.Dev tutorial](https://react.dev/learn/tutorial-tic-tac-toe)
 
 
