@@ -35,3 +35,8 @@ Once you have satisfied the requirements above, consider implementing the follow
   * Implement a single-player mode by adding a Computer player. Your computer player can be "dumb" and just place 'O's in a random available space.
   * Build an AI that competes intelligently. 😳
 
+## Need Help?
+
+Check out the [React.Dev tutorial](https://react.dev/learn/tutorial-tic-tac-toe)https://react.dev/learn/tutorial-tic-tac-toe
+
+
