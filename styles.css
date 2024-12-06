@@ -1,0 +1,39 @@
+body {
+    background-color: lavender;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+button {
+    margin: 20px;
+    text-align: center;
+    width: 20%;
+    border: 0;
+    color: ghostwhite;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+table td {
+    box-sizing: content-box;
+    border: 2px solid black;
+    padding: 60px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}

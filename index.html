@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/3941b02c1e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+
+  </head>
+
+  <body>
+    <main>
+      <h1>Tic Tac Toe</h1>
+      <button id="clear" type="button" onclick="gameMaster.clearBoard(tableCells)">Empty Board</button>
+      <h2 id="winner">Winner: </h2>
+    </main>
+    <table>
+      <tbody id="game-board">
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script type="text/javascript" src="src/GameMaster.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+
+</html>
