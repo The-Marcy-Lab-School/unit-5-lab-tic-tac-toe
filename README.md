@@ -1,5 +1,6 @@
 # Lab: Tic-Tac-Toe
 
+
 ## Directions
 For this cumulative lab, you will simply build a Tic-Tac-Toe game using React components and Vite. To get started, make your own repo using `npm create vite` and when you are done, submit the link to your repo. 
 
